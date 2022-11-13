@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/BodhiPM/static/css/main.c359b7b5.css",
+    "main.js": "/BodhiPM/static/js/main.da54b4be.js",
+    "static/media/BodhiPMTrans.png": "/BodhiPM/static/media/BodhiPMTrans.1ce70d20220a846e8a77.png",
+    "index.html": "/BodhiPM/index.html",
+    "main.c359b7b5.css.map": "/BodhiPM/static/css/main.c359b7b5.css.map",
+    "main.da54b4be.js.map": "/BodhiPM/static/js/main.da54b4be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c359b7b5.css",
+    "static/js/main.da54b4be.js"
+  ]
+}
