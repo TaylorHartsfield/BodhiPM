@@ -1,7 +1,9 @@
+import { useNav } from "../hooks/useNav";
 export default function Contact() {
+    const contactRef = useNav("Contact");
 
     return (
-        <section id="contactSection">
+        <section ref={contactRef} id="contactSection">
             <h2>
                 Contact Us
             </h2>

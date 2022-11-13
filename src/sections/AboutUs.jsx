@@ -1,7 +1,10 @@
+import { useNav } from "../hooks/useNav";
 export default function AboutUs() {
 
+    const aboutUsRef = useNav("About Us");
+
     return (
-        <section id="aboutUsSection">
+        <section ref={aboutUsRef} id="about usSection" className="secondary-section">
             <h2>
                 About Us
             </h2>

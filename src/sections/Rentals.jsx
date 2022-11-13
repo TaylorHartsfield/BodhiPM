@@ -1,7 +1,11 @@
+import { useNav } from "../hooks/useNav";
+
 export default function Rentals() {
 
+    const rentalsRef = useNav("Rentals");
+
     return (
-        <section id="rentalsSection">
+        <section  ref={rentalsRef} id="rentalsSection">
             <h2>
                 Rentals
             </h2>

@@ -1,7 +1,11 @@
+import { useNav } from "../hooks/useNav"
+
 export default function Home() {
 
+    const homeRef = useNav("Home");
+
     return (
-        <section id="homeSection">
+        <section ref={homeRef} id="homeSection" className="secondary-section">
             <h2>
                 Home
             </h2>

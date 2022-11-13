@@ -1,19 +1,21 @@
 .header {
-    background: #fff;
+    background: #FFF;
     color: #3C403D;
-    padding: 1rem;
+    padding: 0 1rem;
     position: fixed;
     width: 100%;
 }
+
 .logo {
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
     font-size: 2rem;
     cursor: pointer;
+    padding: none;
+    margin: none;
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 3rem;
 }
 
@@ -37,7 +39,7 @@
     position: relative;
 }
 
-.navContainer button::before {
+.navContainer button:not(.activeClass)::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -46,11 +48,20 @@
     left: 0;
     bottom: -5px;
     transform: scale(0,1);
-    transition: transform 0.25s ease;
+    transition: transform 0.5s ease;
     transform-origin: 0 100%;
 }
 
-.navContainer button:hover::before {
+.navContainer button:not(.activeClass):hover::before {
     transform: scale(1,1);
+}
 
+.navContainer button.activeClass::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #3C403D;
+    bottom: -5px;
+    left: 0;
 }
