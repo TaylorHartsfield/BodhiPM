@@ -15,7 +15,7 @@ export default function AboutUs() {
             <Container>
                 <Row>
                     <Col>
-                        <img src={us} alt="Family Photo" 
+                        <img src={us} alt="BodhiPM Family" 
                         style={{
                             height: "35rem",
                             width: "auto"
