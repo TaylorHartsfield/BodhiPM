@@ -3,8 +3,6 @@ import styles from "../styles/Locations.module.css";
 import {locations} from "../assets/properties/locations.js";
 import {Row} from "react-bootstrap";
 import { Card } from "react-bootstrap";
-import town from "../assets/properties/img/town.webp";
-
 
 export default function Rentals() {
 
