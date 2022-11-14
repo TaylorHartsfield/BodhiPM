@@ -26,7 +26,8 @@
     display: flex;
     align-items: center;
     position: relative;
-    padding: .5rem 8rem;
+    padding: 0rem 1rem;
+    
 }
 
 .navigationMenu {
@@ -90,7 +91,7 @@
     padding: 1.5rem 0.5rem;
     margin-left: 3rem;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     margin-top: 1rem;
     transform: translateY(-50%);
     display: none;
@@ -98,12 +99,13 @@
 
 
   @media screen and (max-width: 768px) {
+    .navigationMenu ul {
+      display: none;
+  }
     .hamburger {
       display: block;
     }
-    .navigationMenu ul {
-        display: none;
-    }
+  
   }
 
   @media screen and (max-width: 768px) {
@@ -132,8 +134,8 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  /* @media screen and (max-width: 768px) {
     .navigationMenuExpanded ul {
       display: block;
     }
-  }
+  } */

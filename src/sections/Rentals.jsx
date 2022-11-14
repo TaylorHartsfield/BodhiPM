@@ -4,6 +4,7 @@ import {locations} from "../assets/properties/locations.js";
 import {Row} from "react-bootstrap";
 import { Card } from "react-bootstrap";
 
+
 export default function Rentals() {
 
 
@@ -26,7 +27,7 @@ export default function Rentals() {
                         </Card.Body>
                     </Card>
 
-                    <Card className={styles.card} key={locations[1].title}>
+                    <Card className={styles.town} key={locations[1].title}>
                         <Card.Body className={locations[1].key}>
                             <Card.Title>
                                 {locations[1].title}
