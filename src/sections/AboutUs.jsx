@@ -14,16 +14,19 @@ export default function AboutUs() {
                 </h2>
             <Container>
                 <Row>
-                    <Col>
+                    <Col sm={12} md={6} >
                         <img src={us} alt="BodhiPM Family" 
                         style={{
-                            height: "35rem",
-                            width: "auto"
+
+                            width: "100%",
+                            height: "auto",
+                            maxHeight: "650px",
+                            maxWidth: "32em",
                         }}/>
                     </Col>
-                    <Col style={{justifyContent:"center", alignItems:"center"}}>
-                    <p style={{textAlign: "left", paddingTop: "1rem"}}>
-                    Hi there!<br/> I'm Carolyn Whitlow (right) - founder and CEO of Bodhi Property Management. 
+                    <Col style={{display:"flex", alignItems:"center"}}>
+                    <p style={{textAlign: "left",fontSize:"1.2em"}}>
+                   <strong>Hi there!</strong><br/> I'm Carolyn Whitlow (right) - founder and CEO of Bodhi Property Management. 
                     This is my wife Taylor and our Saint Bernard, Bodhi. I have lived in the valley since 2016 and love 
                     everything that this beautiful valley holds. Bodhi PM was founded in 2020 from a dream to help others enjoy the 
                     magic that Crested Butte has to share. Bodhi PM is a fully woman owned and operated property management company 

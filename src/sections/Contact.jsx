@@ -34,49 +34,48 @@ export default function Contact() {
        
 
     return (
-        <section ref={contactRef} id="contactSection" className="contactSection">
+        <section ref={contactRef} id="contactSection" className={styles.contactSection}>
             <h2>
                 Contact Us
             </h2>
             <Row>
                 <Col></Col>
-                <Col lg={6} sm={9}>
-                <p style={{textAlign:"center"}}>
-                For additional information regarding vacation bookings or property services, please fill out the form below with as much information as possible including property 
-                location, services needed, and any other applicable requests you may have.
-                <br/>
-                A member of the Bodhi Property Management team will be in touch with you as soon as possible.<br/> Thanks for stopping by!
-                </p>
-                </Col>
+                    <Col lg={6} sm={9}>
+                        <p style={{textAlign:"center"}}>
+                        For additional information regarding vacation bookings or property services, please fill out the form below with as much information as possible including property 
+                        location, services needed, and any other applicable requests you may have.
+                        <br/>
+                        A member of the Bodhi Property Management team will be in touch with you as soon as possible.<br/> Thanks for stopping by!
+                        </p>
+                    </Col>
                 <Col></Col>
-           <Row>
-            <Col></Col>
-            <Col lg={6} sm={9}>
-                <Form>
-                    <Form.Group className={styles.formGroup}>
-                        <Form.Label for="name" className={focusName? styles.notEmpty : null}>
-                            NAME
-                        </Form.Label>
-                        <Form.Control onFocus={handleFocus} onBlur={handleBlur} type="text" id="name" required className={styles.formControl}/>
-                    </Form.Group>
-                    <Form.Group  className={styles.formGroup}>
-                        <Form.Label for="email" className={focusEmail? styles.notEmpty : null}>
-                            EMAIL
-                        </Form.Label>
-                        <Form.Control onFocus={handleFocus} onBlur={handleBlur} type="email" id="email" required className={styles.formControl}/>
-                    </Form.Group>
-                    <Form.Group  className={styles.formGroup}>
-                        <Form.Label for="message"  className={focusMessage? styles.notEmpty : null}>
-                            Message
-                        </Form.Label>
-                        <Form.Control style={{marginBottom:"1rem"}}onFocus={handleFocus} onBlur={handleBlur} as="textarea" id="message" rows="4" required className={styles.formControl}/>
-                    </Form.Group>
-                    <Button className={styles.button} type="submit">Submit</Button>
-                </Form>
-            </Col>
-            <Col></Col>
             </Row>
-            </Row>
+                           
+                    <Col md={6} sm={12} xs={12}>
+                        <Form style={{textAlign: "left"}}>
+                            <Form.Group className={styles.formGroup}>
+                                <Form.Label for="name" className={focusName? styles.notEmpty : null}>
+                                    NAME
+                                </Form.Label>
+                                <Form.Control onFocus={handleFocus} onBlur={handleBlur} type="text" id="name" required className={styles.formControl}/>
+                            </Form.Group>
+                            <Form.Group  className={styles.formGroup}>
+                                <Form.Label for="email" className={focusEmail? styles.notEmpty : null}>
+                                    EMAIL
+                                </Form.Label>
+                                <Form.Control onFocus={handleFocus} onBlur={handleBlur} type="email" id="email" required className={styles.formControl}/>
+                            </Form.Group>
+                            <Form.Group  className={styles.formGroup}>
+                                <Form.Label for="message"  className={focusMessage? styles.notEmpty : null}>
+                                    Message
+                                </Form.Label>
+                                <Form.Control style={{marginBottom:"1rem"}}onFocus={handleFocus} onBlur={handleBlur} as="textarea" id="message" rows="4" required className={styles.formControl}/>
+                            </Form.Group>
+                            <Button className={styles.button} type="submit">Submit</Button>
+                        </Form>
+                    </Col>
+         
+            
         </section>
     )
 }
