@@ -1,0 +1,42 @@
+.contactSection{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.formControl {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.formControl:focus {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #3C403D;
+    background: none;
+    box-shadow: none;
+}
+
+
+label {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: lightgray;
+    transform-origin: 0 0;            
+    transform: scale(1.4);          
+    pointer-events: none;             
+    position: relative;    
+    z-index: 5;
+}
+
+label {
+    transition: transform .4s;
+    transform-origin: 0 0;
+    transform: scale(1.4) translateY(20px)
+}
+
+label.not-empty {
+    transform: none;
+}
