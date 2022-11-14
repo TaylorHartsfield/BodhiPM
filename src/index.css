@@ -38,6 +38,11 @@ section {
 
 .secondary-section {
   background: #DADED4;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 section h2{
