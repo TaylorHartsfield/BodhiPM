@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div>
       <NavProvider>
-        <Header/>
+        <div><Header/></div>
         <Home />
         <Rentals />
         <AboutUs />

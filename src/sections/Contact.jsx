@@ -40,7 +40,7 @@ export default function Contact() {
             </h2>
             <Row>
                 <Col></Col>
-                    <Col lg={6} sm={9}>
+                    <Col md={9} sm={9}>
                         <p style={{textAlign:"center"}}>
                         For additional information regarding vacation bookings or property services, please fill out the form below with as much information as possible including property 
                         location, services needed, and any other applicable requests you may have.
@@ -51,7 +51,7 @@ export default function Contact() {
                 <Col></Col>
             </Row>
                            
-                    <Col md={6} sm={12} xs={12}>
+                    <Col md={9} sm={12} xs={12}>
                         <Form style={{textAlign: "left"}}>
                             <Form.Group className={styles.formGroup}>
                                 <Form.Label for="name" className={focusName? styles.notEmpty : null}>
