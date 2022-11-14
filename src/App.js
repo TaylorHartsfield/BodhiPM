@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import {useState} from "react";
+import React, { useEffect, useState } from "react";
 import Loading from "./components/Loading";
 import Header from "./components/Header";
 import Home from "./sections/Home";
@@ -11,21 +10,18 @@ import NavProvider from "./context/NavContext";
 
 export default function App() {
 
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    fetch('./assets/img/CB.jpg')
-    .then((res) => res.blob)
-    .then((ready) => {
-      setLoaded(true)
-    })
+  const [loading, setLoading] = useState(false);
   
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 4000)
   }, [])
-
 
   return (
     <div>
-      {loaded? 
+      {loading ? <Loading /> :
       <NavProvider>
         <Header/>
         <Home />
@@ -33,8 +29,8 @@ export default function App() {
         <AboutUs />
         <Contact />
       </NavProvider>
-      :<Loading />}
-
+ 
+  }
     </div>
   )
 }
