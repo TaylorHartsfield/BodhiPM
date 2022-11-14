@@ -6,7 +6,7 @@ export default function Home() {
 
     const homeRef = useNav("Home");
 
-
+  
     const handleClickRentals = () =>{
         document.getElementById("rentalsSection").scrollIntoView({behavior: "smooth"})
     }
@@ -16,6 +16,7 @@ export default function Home() {
     }
 
     return (
+        
         <section ref={homeRef} id="homeSection" className={styles.homeSection}>
             <h2 className={styles.h2}>
                 Bodhi Property Management
@@ -25,6 +26,6 @@ export default function Home() {
                 <button className={styles.button} onClick={handleClickRentals}>RENTALS</button>
                 <button className={styles.button} onClick={handleClickContact}>CONTACT</button>
             </div>
-        </section>
+        </section>  
     )
 }

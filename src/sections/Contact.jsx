@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <section ref={contactRef} id="contactSection">
             <h2>
-                Contact Us
+                Contact
             </h2>
             <p>
             Lorem ipsum dolor sit amet consectetur 
