@@ -1,10 +1,11 @@
-import { useNav } from "../hooks/useNav"
+import { useNav } from "../hooks/useNav";
 
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
 
     const homeRef = useNav("Home");
+
 
     const handleClickRentals = () =>{
         document.getElementById("rentalsSection").scrollIntoView({behavior: "smooth"})
