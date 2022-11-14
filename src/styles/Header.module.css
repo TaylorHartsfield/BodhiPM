@@ -4,6 +4,7 @@
     padding: 0 1rem;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .logo {
@@ -15,22 +16,38 @@
     margin: none;
 }
 
-.container {
-    margin: 0 3rem;
+.brandName {
+    margin-left: 1rem;
 }
 
-.navContainer {
+.container {
+    height: 5rem;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    position: relative;
+    padding: .5rem 8rem;
 }
 
-.navContainer nav {
+.navigationMenu {
+    margin-left: auto;
     display: flex;
     gap: 2.5rem;
+    padding-top: .5rem;
 }
 
-.navContainer button {
+.navigationMenu ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationMenu li {
+    list-style-type: none;
+    margin: 1rem 1rem;
+}
+.container button {
     font-size: 1rem;
     cursor: pointer;
     color: #3C403D;
@@ -39,7 +56,7 @@
     position: relative;
 }
 
-.navContainer button:not(.activeClass)::before {
+.container button:not(.activeClass)::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -52,11 +69,11 @@
     transform-origin: 0 100%;
 }
 
-.navContainer button:not(.activeClass):hover::before {
+.container button:not(.activeClass):hover::before {
     transform: scale(1,1);
 }
 
-.navContainer button.activeClass::before {
+.container button.activeClass::before {
     content: "";
     position: absolute;
     height: 1px;
@@ -65,3 +82,58 @@
     bottom: -5px;
     left: 0;
 }
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 50px;
+    padding: 1.5rem 0.5rem;
+    margin-left: 3rem;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 1rem;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+    .navigationMenu ul {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .navigationMenuExpanded ul {
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      padding: 0;
+      width: 100%;
+      flex-direction: column;
+      background-color: white;
+      border-top: 1px solid black;
+      z-index: -1;
+      display: block;
+    }
+    .navigationMenuExpanded li {
+      text-align: center;
+      margin: 0;
+      z-index: 1;
+      padding: 1rem 0;
+    }
+
+    .navigationMenuExpanded li:hover {
+      background-color: #eee;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navigationMenuExpanded ul {
+      display: block;
+    }
+  }
