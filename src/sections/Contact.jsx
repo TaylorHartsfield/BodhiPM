@@ -2,15 +2,18 @@ import { useNav } from "../hooks/useNav";
 import {Col, Form, Button} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import styles from "../styles/Contact.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
 
     const contactRef = useNav("Contact");
+    const formRef = useRef();
 
     const [focusName, setFocusName] = useState(false);
     const [focusEmail, setFocusEmail] = useState(false);
     const [focusMessage, setFocusMessage] = useState(false);
+    const [sentMessage, setSentMessage] = useState(false);
 
     function handleFocus(e) {
        if(e.target.id === "name") {
@@ -22,16 +25,26 @@ export default function Contact() {
        }
        }
     
-       function handleBlur(e) {
+    function handleBlur(e) {
         if(e.target.id === "name" && e.target.value === "") {
             setFocusName(false)
-           } else if (e.target.id === "email" && e.target.value === "") {
+        } else if (e.target.id === "email" && e.target.value === "") {
             setFocusEmail(false)
-           } else if (e.target.value === "") {
+        } else if (e.target.value === "") {
             setFocusMessage(false)
-           }
-           }
-       
+        }
+        }
+    
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('service_i209hg7','template_7o2q35r', formRef.current, 'wH8VqXns5KriulWat')
+        .then((result) => {
+            setSentMessage(true);
+        }, (error) => {
+            console.log(error.text)
+        });
+    }
 
     return (
         <section ref={contactRef} id="contactSection" className={styles.contactSection}>
@@ -56,27 +69,28 @@ export default function Contact() {
             </Row>
                            
                     <Col md={9} sm={12} xs={12}>
-                        <Form style={{textAlign: "left"}}>
+                        {sentMessage? <h3>Thank you, your message has been recieved!</h3> :
+                        <Form style={{textAlign: "left"}} ref={formRef} onSubmit={sendEmail}>
                             <Form.Group className={styles.formGroup}>
                                 <Form.Label for="name" className={focusName? styles.notEmpty : null}>
                                     NAME
                                 </Form.Label>
-                                <Form.Control onFocus={handleFocus} onBlur={handleBlur} type="text" id="name" required className={styles.formControl}/>
+                                <Form.Control onFocus={handleFocus} onBlur={handleBlur} type="text" id="name" name="from_name" required className={styles.formControl}/>
                             </Form.Group>
                             <Form.Group  className={styles.formGroup}>
                                 <Form.Label for="email" className={focusEmail? styles.notEmpty : null}>
                                     EMAIL
                                 </Form.Label>
-                                <Form.Control onFocus={handleFocus} onBlur={handleBlur} type="email" id="email" required className={styles.formControl}/>
+                                <Form.Control onFocus={handleFocus} onBlur={handleBlur} type="email" id="email" name="email" required className={styles.formControl}/>
                             </Form.Group>
                             <Form.Group  className={styles.formGroup}>
                                 <Form.Label for="message"  className={focusMessage? styles.notEmpty : null}>
                                     Message
                                 </Form.Label>
-                                <Form.Control style={{marginBottom:"1rem"}}onFocus={handleFocus} onBlur={handleBlur} as="textarea" id="message" rows="4" required className={styles.formControl}/>
+                                <Form.Control style={{marginBottom:"1rem"}}onFocus={handleFocus} onBlur={handleBlur} as="textarea" id="message" rows="4" name="message" required className={styles.formControl}/>
                             </Form.Group>
-                            <Button className={styles.button} type="submit">Submit</Button>
-                        </Form>
+                            <Button className={styles.button} type="submit" value="Send">Submit</Button>
+                        </Form>}
                     </Col>
         </section>
     )
