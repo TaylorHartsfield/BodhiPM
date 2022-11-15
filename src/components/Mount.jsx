@@ -29,7 +29,7 @@ export default function Mount({popup}) {
                 Mount Crested Butte
             </Modal.Title>
         </Modal.Header>
-        <Modal.Body  className={styles.modal}>
+        <Modal.Body className={styles.modal}>
             <div className={styles.container}>
                 <div className={styles.propertyDetails}>
                     <h1 className={styles.h1}>GOTHIC MANOR</h1>

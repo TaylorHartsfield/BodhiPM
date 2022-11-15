@@ -1,5 +1,6 @@
 .modal{
     background-color: #DADED4;
+    overflow: auto;
 }
 .container {
     box-shadow: 0 15px 30px 1px grey;
