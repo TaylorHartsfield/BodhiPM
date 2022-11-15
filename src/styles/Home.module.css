@@ -1,15 +1,42 @@
-.homeSection{
+/* .homeSection{
     background-image: url("../assets/img/CB.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-color: #cccccc;
     width: 100%;
     height: 100vh;
+} */
+
+.homeSection{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+.bg{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-.img {
+
+
+.small {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    filter: blur(20px);
+    animation: fadeOutAnimation ease 1s;
+}
+/* .img {
     width: 100%;
     height: auto;
-}
+} */
 
 @keyframes fadeInAnimation {
     0% {
@@ -17,6 +44,15 @@
     }
     100% {
         opacity: 1;
+     }
+}
+
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
      }
 }
 .h2 {
@@ -28,6 +64,7 @@
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    
 }
 
 .h3 {
@@ -39,6 +76,7 @@
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    
 }
 .p {
     font-size: 2rem;
@@ -60,6 +98,7 @@
     border-style: solid;
     border-color: transparent;
     text-align: center;
+   
     
 }
 

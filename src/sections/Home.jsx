@@ -1,12 +1,16 @@
 import { useNav } from "../hooks/useNav";
-
 import styles from "../styles/Home.module.css";
+import bg from "../assets/img/CB.jpg";
+import smallBG from "../assets/img/CBSmall.jpg";
+import { useState } from "react";
+
 
 export default function Home() {
 
     const homeRef = useNav("Home");
 
-  
+    const [isLoaded, setIsLoaded] = useState(false);
+
     const handleClickRentals = () =>{
         document.getElementById("rentalsSection").scrollIntoView({behavior: "smooth"})
     }
@@ -15,9 +19,13 @@ export default function Home() {
         document.getElementById("contactSection").scrollIntoView({behavior: "smooth"})
     }
 
+
+
     return (
-        
-        <section ref={homeRef} id="homeSection" className={styles.homeSection}>
+    
+        <section ref={homeRef} id="homeSection">
+            <img src={bg} onLoad={()=> {setIsLoaded(true)}} alt="CB background" className={styles.bg} />
+            <img src={smallBG} className={styles.small} alt="BG" style={{visibility: isLoaded ? "hidden":"visible"}}/>
             <h2 className={styles.h2}>
                 Bodhi Property Management
             </h2>
@@ -26,6 +34,7 @@ export default function Home() {
                 <button className={styles.button} onClick={handleClickRentals}>RENTALS</button>
                 <button className={styles.button} onClick={handleClickContact}>CONTACT</button>
             </div>
-        </section>  
+        </section>
+      
     )
 }
