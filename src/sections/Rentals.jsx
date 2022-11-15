@@ -8,6 +8,9 @@ import town from "../assets/properties/img/TownCB.jpeg";
 import mount from "../assets/properties/img/Mount.jpeg";
 import south from "../assets/properties/img/South.jpeg";
 import { useState } from "react";
+import Town from "../components/Town";
+import Mount from "../components/Mount";
+import South from "../components/South";
 
 
 export default function Rentals() {
@@ -26,11 +29,21 @@ export default function Rentals() {
         } else if (value === "south"){
             setSouthRentals(true);
         }
-        console.log("Going to do an offCanvas pop up of properties")
+    }
+
+    function handleFocus(){
+        setMtRentals(false);
+        setSouthRentals(false);
+        setTownRentals(false);
     }
 
     return (
-        <section ref={rentalsRef} id="rentalsSection" className={styles.rentalsContainer}>
+        <section 
+        onFocus={handleFocus}
+        ref={rentalsRef} id="rentalsSection" className={styles.rentalsContainer}>
+            <Town popup={townRentals} />
+            <Mount popup={mtRentals} />
+            <South popup={southRentals} />
             <h2 className={styles.h2}>Rentals</h2>
             <h3 className={styles.h3}>Neighborhoods</h3>
             <div className={styles.container}>
