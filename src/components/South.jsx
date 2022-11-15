@@ -36,7 +36,7 @@ export default function South({popup}) {
                     <p className={styles.information}>
                     A quaint mountain home with incredible river and mountain views. 
                     Enjoy sunsets from one of the two outdoor patios while you grill a delicious meal for your whole family.
-                    Close to trails and secluded while still very close to town. Only a 15 min drive to the ski slopes! Enojy the 
+                    Close to trails and secluded while still very close to town. Only a 15 min drive to the ski slopes! Enjoy the 
                     free shuttle to get to town or the mountain!
                     </p>
                     <div className={styles.control}>
