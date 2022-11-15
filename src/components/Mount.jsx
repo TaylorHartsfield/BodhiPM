@@ -1,13 +1,16 @@
 import Modal from 'react-bootstrap/Modal';
 import { useState, useEffect } from 'react';
-import Card from "react-bootstrap/Card";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import styles from "../styles/Properties.module.css";
+import gothic from "../assets/properties/img/gothic.webp";
 
 
 export default function Mount({popup}) {
 
     const [show, setShow] = useState(false);
+
+    function handleGothic(){
+        window.open("https://www.airbnb.com/rooms/53123936?adults=1&s=42&unique_share_id=9A9E71CB-54C7-448F-99D4-636A89406347&_branch_match_id=1121186301293151540&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdV3yU2KLC0ITY4qTQIAuZXOChsAAAA%3D&source_impression_id=p3_1668551260_tIWYFT4T4EGhavb%2B", '_blank')
+    }
 
     function handleClose() {
         setShow(false);
@@ -20,30 +23,45 @@ export default function Mount({popup}) {
     }, [popup])
 
     return (
-      <Modal show={show} onHide={handleClose}>
+      <Modal fullscreen={true} show={show} onHide={handleClose}>
         <Modal.Header closeButton>
             <Modal.Title>
                 Mount Crested Butte
             </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-            <Row>
-                <Col>
-                    <Card>
-                        Property 1
-                    </Card>
-                </Col>
-               <Col>
-                    <Card>
-                        Property 2
-                    </Card>
-                </Col>
-                <Col>
-                    <Card>
-                        Property 3
-                    </Card>
-                </Col>
-            </Row>
+        <Modal.Body  className={styles.modal}>
+            <div className={styles.container}>
+                <div className={styles.propertyDetails}>
+                    <h1 className={styles.h1}>GOTHIC MANOR</h1>
+                    <p className={styles.information}>
+                        Gothic Manor is a cozy and charming 3 Bed, 2 Bath located in Mt. Crested
+                        Butte. Much of the house was renovated in 2021 - including a new kitchen and 500 sq. ft. 
+                        deck with epic views. House has electric heat and a fireplace in the living room. In the summer, 
+                        open up the windows and let the crisp mountain air wash over you.
+                    </p>
+                    <div className={styles.control}>
+                        <button onClick={handleGothic} className={styles.btn}>
+                            <span className={styles.bookNow}>Book Now</span> 
+                        </button>
+                    </div>
+                </div>
+                <div className={styles.propertyImage}>
+                    <img src={gothic} alt="Gothic Manor"/>
+
+                    <div className={styles.info}>
+                        <h2>Details</h2>
+                        <ul>
+                            <li>Sleeps 8</li>
+                            <li>Epic mountain views</li>
+                            <li>Dog friendly with additional fee</li>
+                            <li>Fully equipped kitchen</li>
+                            <li>Half a block from free shuttle</li>
+                            <li>Parking for up to 3 vehicles</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </Modal.Body>
 
       </Modal>

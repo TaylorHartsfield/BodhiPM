@@ -24,7 +24,7 @@ export default function Home() {
     return (
     
         <section ref={homeRef} id="homeSection">
-            <img src={bg} onLoad={()=> {setIsLoaded(true)}} alt="CB background" className={styles.bg} />
+            <img src={bg} onLoad={()=> {setIsLoaded(true)}} alt="CB background" className={styles.bg} style={{visibility: isLoaded ? "visible":"hidden"}}/>
             <img src={smallBG} className={styles.small} alt="BG" style={{visibility: isLoaded ? "hidden":"visible"}}/>
             <h2 className={styles.h2}>
                 Bodhi Property Management

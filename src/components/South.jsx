@@ -20,7 +20,7 @@ export default function South({popup}) {
     }, [popup])
 
     return (
-      <Modal show={show} onHide={handleClose}>
+      <Modal fullscreen={true} show={show} onHide={handleClose}>
         <Modal.Header closeButton>
             <Modal.Title>
                 Crested Butte South

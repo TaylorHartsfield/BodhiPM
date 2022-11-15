@@ -20,30 +20,14 @@ export default function Town({popup}) {
     }, [popup])
 
     return (
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
+      <Modal fullscreen={true} show={show} onHide={handleClose}>
+        <Modal.Header style={{textAlign:"center"}} closeButton>
             <Modal.Title>
-                Town of Crested Butte
+               <h3>Town of Crested Butte</h3>
             </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <Row>
-                <Col>
-                    <Card>
-                        Property 1
-                    </Card>
-                </Col>
-               <Col>
-                    <Card>
-                        Property 2
-                    </Card>
-                </Col>
-                <Col>
-                    <Card>
-                        Property 3
-                    </Card>
-                </Col>
-            </Row>
+            
         </Modal.Body>
 
       </Modal>
