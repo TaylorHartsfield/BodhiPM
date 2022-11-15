@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BodhiPM/static/css/main.13911662.css",
-    "main.js": "/BodhiPM/static/js/main.05647e5b.js",
+    "main.css": "/BodhiPM/static/css/main.81abe1fb.css",
+    "main.js": "/BodhiPM/static/js/main.bd94eff0.js",
     "static/media/CB.jpg": "/BodhiPM/static/media/CB.4a982626cf09c24b33f9.jpg",
     "static/media/TCB.jpg": "/BodhiPM/static/media/TCB.b59fc2cb9cc59bd44bc5.jpg",
     "static/media/Mount.jpeg": "/BodhiPM/static/media/Mount.fc9648b03156ad414707.jpeg",
@@ -10,11 +10,11 @@
     "static/media/TownCB.jpeg": "/BodhiPM/static/media/TownCB.d558fc87b3ad846cfae5.jpeg",
     "static/media/BodhiPMTrans.png": "/BodhiPM/static/media/BodhiPMTrans.04df2a1db3d3c94ba4da.png",
     "index.html": "/BodhiPM/index.html",
-    "main.13911662.css.map": "/BodhiPM/static/css/main.13911662.css.map",
-    "main.05647e5b.js.map": "/BodhiPM/static/js/main.05647e5b.js.map"
+    "main.81abe1fb.css.map": "/BodhiPM/static/css/main.81abe1fb.css.map",
+    "main.bd94eff0.js.map": "/BodhiPM/static/js/main.bd94eff0.js.map"
   },
   "entrypoints": [
-    "static/css/main.13911662.css",
-    "static/js/main.05647e5b.js"
+    "static/css/main.81abe1fb.css",
+    "static/js/main.bd94eff0.js"
   ]
 }
