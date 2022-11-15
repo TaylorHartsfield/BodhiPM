@@ -42,10 +42,14 @@ export default function Contact() {
                 <Col></Col>
                     <Col md={9} sm={9}>
                         <p style={{textAlign:"center"}}>
-                        For additional information regarding vacation bookings or property services, please fill out the form below with as much information as possible including property 
+                        For additional information regarding vacation bookings or property services, 
+                        please fill out the 
+                        form below with as much information as possible including property 
                         location, services needed, and any other applicable requests you may have.
                         <br/>
-                        A member of the Bodhi Property Management team will be in touch with you as soon as possible.<br/> Thanks for stopping by!
+                        A member of the Bodhi Property Management team will be in touch with 
+                        you as soon as possible.<br/> 
+                        Thanks for stopping by!
                         </p>
                     </Col>
                 <Col></Col>
@@ -74,8 +78,6 @@ export default function Contact() {
                             <Button className={styles.button} type="submit">Submit</Button>
                         </Form>
                     </Col>
-         
-            
         </section>
     )
 }

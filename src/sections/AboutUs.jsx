@@ -14,10 +14,9 @@ export default function AboutUs() {
                 </h2>
             <Container>
                 <Row>
-                    <Col sm={12} md={6} >
+                    <Col sm={12} md={6} style={{paddingBottom: "1rem"}}>
                         <img src={us} alt="BodhiPM Family" 
                         style={{
-
                             width: "100%",
                             height: "auto",
                             maxHeight: "650px",
@@ -25,7 +24,7 @@ export default function AboutUs() {
                         }}/>
                     </Col>
                     <Col style={{display:"flex", alignItems:"center"}}>
-                    <p style={{textAlign: "left",fontSize:"1.2em"}}>
+                    <p style={{textAlign: "left"}}>
                    <strong>Hi there!</strong><br/> I'm Carolyn Whitlow (right) - founder and CEO of Bodhi Property Management. 
                     This is my wife Taylor and our Saint Bernard, Bodhi. I have lived in the valley since 2016 and love 
                     everything that this beautiful valley holds. Bodhi PM was founded in 2020 from a dream to help others enjoy the 
