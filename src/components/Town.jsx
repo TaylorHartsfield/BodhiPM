@@ -31,7 +31,7 @@ export default function Town({popup}) {
         <Modal.Body className={styles.modal}>
             <div className={styles.container}>
                 <div className={styles.propertyDetails}>
-                    <h1 className={styles.h1}>Maroon House</h1>
+                    <h1 className={styles.h1}>LINCOLN LODGE</h1>
                     <p className={styles.information}>
                    Coming Early 2023!
                     </p>

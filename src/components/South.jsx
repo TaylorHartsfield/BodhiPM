@@ -32,7 +32,7 @@ export default function South({popup}) {
         <Modal.Body className={styles.modal}>
             <div className={styles.container}>
                 <div className={styles.propertyDetails}>
-                    <h1 className={styles.h1}>Shavano</h1>
+                    <h1 className={styles.h1}>SHAVANO HOUSE</h1>
                     <p className={styles.information}>
                     A quaint mountain home with incredible river and mountain views. 
                     Enjoy sunsets from one of the two outdoor patios while you grill a delicious meal for your whole family.
