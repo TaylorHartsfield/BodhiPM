@@ -43,7 +43,6 @@ export default function Town({popup}) {
                 </div>
                 <div className={styles.propertyImage}>
                     <img src={maroon} alt="Shavano"/>
-
                     <div className={styles.info}>
                         <h2>Details</h2>
                         <ul>

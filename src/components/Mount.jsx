@@ -1,8 +1,7 @@
 import Modal from 'react-bootstrap/Modal';
 import { useState, useEffect } from 'react';
 import styles from "../styles/Properties.module.css";
-import gothic from "../assets/properties/img/gothic.webp";
-
+import gothic from "../assets/properties/img/gothic3.webp";
 
 export default function Mount({popup}) {
 
@@ -10,6 +9,11 @@ export default function Mount({popup}) {
 
     function handleGothic(){
         window.open("https://www.airbnb.com/rooms/53123936?adults=1&s=42&unique_share_id=9A9E71CB-54C7-448F-99D4-636A89406347&_branch_match_id=1121186301293151540&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdV3yU2KLC0ITY4qTQIAuZXOChsAAAA%3D&source_impression_id=p3_1668551260_tIWYFT4T4EGhavb%2B", '_blank')
+    }
+
+    function handleIG(){
+        window.open("https://www.instagram.com/gothicmanor/", "_blank")
+
     }
 
     function handleClose() {
@@ -47,7 +51,6 @@ export default function Mount({popup}) {
                 </div>
                 <div className={styles.propertyImage}>
                     <img src={gothic} alt="Gothic Manor"/>
-
                     <div className={styles.info}>
                         <h2>Details</h2>
                         <ul>
