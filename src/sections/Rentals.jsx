@@ -7,11 +7,27 @@ import Card from "react-bootstrap/Card";
 import town from "../assets/properties/img/TownCB.jpeg";
 import mount from "../assets/properties/img/Mount.jpeg";
 import south from "../assets/properties/img/South.jpeg";
+import { useState } from "react";
+
 
 export default function Rentals() {
 
-
     const rentalsRef = useNav("Rentals");
+
+    const [townRentals, setTownRentals] = useState(false);
+    const [mtRentals, setMtRentals] = useState(false);
+    const [southRentals, setSouthRentals] = useState(false);
+
+    function handleOnClick(value){
+        if(value === "town") {
+            setTownRentals(true);
+        } else if(value === "mount") {
+            setMtRentals(true);
+        } else if (value === "south"){
+            setSouthRentals(true);
+        }
+        console.log("Going to do an offCanvas pop up of properties")
+    }
 
     return (
         <section ref={rentalsRef} id="rentalsSection" className={styles.rentalsContainer}>
@@ -20,7 +36,7 @@ export default function Rentals() {
             <div className={styles.container}>
                 <Row className={styles.row}>
                     <Col className={styles.col} xs={10} sm={9} md={6} lg={4}>
-                        <Card className={styles.town} key={locations[1].title}>
+                        <Card onClick={()=>handleOnClick("town")} className={styles.town} key={locations[1].title}>
                         <div className={styles.cardImgBlock}>
                             <Card.Img src={town} alt="Town" className={styles.img} />
                             </div>
@@ -35,7 +51,7 @@ export default function Rentals() {
                         </Card>
                     </Col>
                     <Col className={styles.col} xs={10} sm={9} md={6} lg={4}>
-                        <Card className={styles.mt} key={locations[0].title}>
+                        <Card onClick={()=>handleOnClick("mount")}  className={styles.mt} key={locations[0].title}>
                             <div className={styles.cardImgBlock}>
                                 <Card.Img src={mount} alt="Mt.CB" className={styles.img}/>
                             </div>
@@ -50,7 +66,7 @@ export default function Rentals() {
                         </Card>
                     </Col>
                     <Col className={styles.col} xs={10} sm={9} md={6} lg={4}>
-              <Card className={styles.south} key={locations[2].title}>
+              <Card onClick={()=>handleOnClick("south")}  className={styles.south} key={locations[2].title}>
                 <div className={styles.cardImgBlock}>
                  <Card.Img src={south} alt="CB South" className={styles.img} />
                  </div>

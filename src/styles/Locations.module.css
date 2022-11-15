@@ -24,30 +24,30 @@
 }
 
 .row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 2rem;
-  }
-  
-  .h3{
-    color: black;
-      text-align: center;
-      font-size: 3rem;
-      margin: 0;
-      padding: 0;
-      margin-bottom: 1rem;
-    
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
+}
 
-  .h2 {
-      color: black;
-      text-align: center;
-      font-size: 5rem;
-      margin-bottom: 1rem;
-      padding: 0;
-  }
+.h3{
+  color: black;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+  
+}
+
+.h2 {
+  color: black;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
 
 
 .town {
@@ -57,6 +57,7 @@
   height: auto;
   border-color: #3C403D;
   margin-bottom: 1rem;
+  transition: all .2s ease-in-out;
   }
 
 .mt {
@@ -66,6 +67,7 @@
   height: auto;
   border-color: #3C403D;
   margin-bottom: 1rem;
+  transition: all .2s ease-in-out;
 
   }
 
@@ -76,6 +78,7 @@
     height: auto;
     border-color: #3C403D;
     margin-bottom: 1rem;
+    transition: all .2s ease-in-out;
   
   }
 
@@ -93,7 +96,7 @@
   height: 30vh;
 }
 .body{
-  padding: 0;
+  padding: 0 1rem;
   top: -10px;
   position: relative;
 
@@ -104,6 +107,17 @@
   
 }
 
+.south:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .mt:hover{
-  
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.town:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
