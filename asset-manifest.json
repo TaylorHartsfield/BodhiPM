@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.73c19f1e.css",
-    "main.js": "/static/js/main.f6be5a5a.js",
+    "main.js": "/static/js/main.bf7047f7.js",
     "static/media/CB.jpg": "/static/media/CB.4a982626cf09c24b33f9.jpg",
     "static/media/TCB.jpg": "/static/media/TCB.b59fc2cb9cc59bd44bc5.jpg",
     "static/media/maroon.jpeg": "/static/media/maroon.a0fb54e27fd0d00c76be.jpeg",
@@ -13,10 +13,10 @@
     "static/media/BodhiPMTrans.png": "/static/media/BodhiPMTrans.04df2a1db3d3c94ba4da.png",
     "index.html": "/index.html",
     "main.73c19f1e.css.map": "/static/css/main.73c19f1e.css.map",
-    "main.f6be5a5a.js.map": "/static/js/main.f6be5a5a.js.map"
+    "main.bf7047f7.js.map": "/static/js/main.bf7047f7.js.map"
   },
   "entrypoints": [
     "static/css/main.73c19f1e.css",
-    "static/js/main.f6be5a5a.js"
+    "static/js/main.bf7047f7.js"
   ]
 }
