@@ -11,10 +11,11 @@ export default function Mount({popup}) {
         window.open("https://www.airbnb.com/rooms/53123936?adults=1&s=42&unique_share_id=9A9E71CB-54C7-448F-99D4-636A89406347&_branch_match_id=1121186301293151540&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT0zKS9LLTdV3yU2KLC0ITY4qTQIAuZXOChsAAAA%3D&source_impression_id=p3_1668551260_tIWYFT4T4EGhavb%2B", '_blank')
     }
 
-    function handleIG(){
-        window.open("https://www.instagram.com/gothicmanor/", "_blank")
+    // function handleIG(){
+    //     window.open("https://www.instagram.com/gothicmanor/", "_blank")
 
-    }
+    // }
+
 
     function handleClose() {
         setShow(false);
@@ -33,8 +34,8 @@ export default function Mount({popup}) {
                 <h3>Mount Crested Butte</h3>
             </Modal.Title>
         </Modal.Header>
-        <Modal.Body className={styles.modal}>
-            <div className={styles.container}>
+        <Modal.Body className={styles.modal} onClick={handleClose}>
+            <div onClick={(e)=> {e.stopPropagation()}} className={styles.container}>
                 <div className={styles.propertyDetails}>
                     <h1 className={styles.h1}>GOTHIC MANOR</h1>
                     <p className={styles.information}>
@@ -44,29 +45,30 @@ export default function Mount({popup}) {
                         open up the windows and let the crisp mountain air wash over you.
                     </p>
                     <div className={styles.control}>
-                        <button onClick={handleGothic} className={styles.btn}>
+                        <button onClick={(e) => {
+                            e.stopPropagation()
+                            handleGothic()}} className={styles.btn}>
                             <span className={styles.bookNow}>Book Now</span> 
                         </button>
                     </div>
                 </div>
-                <div className={styles.propertyImage}>
-                    <img src={gothic} alt="Gothic Manor"/>
-                    <div className={styles.info}>
-                        <h2>Details</h2>
-                        <ul>
-                            <li>Sleeps 8</li>
-                            <li>Epic mountain views</li>
-                            <li>Dog friendly with additional fee</li>
-                            <li>Fully equipped kitchen</li>
-                            <li>Half a block from free shuttle</li>
-                            <li>Parking for up to 3 vehicles</li>
+                <div  className={styles.propertyImage}>
+                    <img  src={gothic} alt="Gothic Manor"/>
+                    <div  className={styles.info}>
+                        <h2 >Details</h2>
+                        <ul >
+                            <li >Sleeps 8</li>
+                            <li >Epic mountain views</li>
+                            <li >Dog friendly with additional fee</li>
+                            <li >Fully equipped kitchen</li>
+                            <li >Half a block from free shuttle</li>
+                            <li >Parking for up to 3 vehicles</li>
                         </ul>
                     </div>
                 </div>
 
             </div>
         </Modal.Body>
-
       </Modal>
             
     )

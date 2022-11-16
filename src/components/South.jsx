@@ -29,8 +29,8 @@ export default function South({popup}) {
               <h3>Crested Butte South</h3>
             </Modal.Title>
         </Modal.Header>
-        <Modal.Body className={styles.modal}>
-            <div className={styles.container}>
+        <Modal.Body onClick={handleClose} className={styles.modal}>
+            <div onClick={(e)=> {e.stopPropagation()}} className={styles.container}>
                 <div className={styles.propertyDetails}>
                     <h1 className={styles.h1}>SHAVANO HOUSE</h1>
                     <p className={styles.information}>

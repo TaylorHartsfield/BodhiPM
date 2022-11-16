@@ -28,8 +28,8 @@ export default function Town({popup}) {
                <h3>Town of Crested Butte</h3>
             </Modal.Title>
         </Modal.Header>
-        <Modal.Body className={styles.modal}>
-            <div className={styles.container}>
+        <Modal.Body onClick={handleClose} className={styles.modal}>
+            <div  onClick={(e)=> {e.stopPropagation()}} className={styles.container}>
                 <div className={styles.propertyDetails}>
                     <h1 className={styles.h1}>LINCOLN LODGE</h1>
                     <p className={styles.information}>
