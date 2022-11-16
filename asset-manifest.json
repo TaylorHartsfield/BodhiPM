@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/BodhiPM/static/css/main.0a350c24.css",
-    "main.js": "/BodhiPM/static/js/main.906efc39.js",
-    "static/media/CB.jpg": "/BodhiPM/static/media/CB.4a982626cf09c24b33f9.jpg",
-    "static/media/TCB.jpg": "/BodhiPM/static/media/TCB.b59fc2cb9cc59bd44bc5.jpg",
-    "static/media/maroon.jpeg": "/BodhiPM/static/media/maroon.a0fb54e27fd0d00c76be.jpeg",
-    "static/media/Mount.jpeg": "/BodhiPM/static/media/Mount.fc9648b03156ad414707.jpeg",
-    "static/media/South.jpeg": "/BodhiPM/static/media/South.c6b70a132c30bed55bba.jpeg",
-    "static/media/gothic3.webp": "/BodhiPM/static/media/gothic3.fc4786df494a5251603f.webp",
-    "static/media/TownCB.jpeg": "/BodhiPM/static/media/TownCB.d558fc87b3ad846cfae5.jpeg",
-    "static/media/shavano.webp": "/BodhiPM/static/media/shavano.3879bbf79cfb8fee380c.webp",
-    "static/media/BodhiPMTrans.png": "/BodhiPM/static/media/BodhiPMTrans.04df2a1db3d3c94ba4da.png",
-    "index.html": "/BodhiPM/index.html",
-    "main.0a350c24.css.map": "/BodhiPM/static/css/main.0a350c24.css.map",
-    "main.906efc39.js.map": "/BodhiPM/static/js/main.906efc39.js.map"
+    "main.css": "/static/css/main.0a350c24.css",
+    "main.js": "/static/js/main.355d7c50.js",
+    "static/media/CB.jpg": "/static/media/CB.4a982626cf09c24b33f9.jpg",
+    "static/media/TCB.jpg": "/static/media/TCB.b59fc2cb9cc59bd44bc5.jpg",
+    "static/media/maroon.jpeg": "/static/media/maroon.a0fb54e27fd0d00c76be.jpeg",
+    "static/media/Mount.jpeg": "/static/media/Mount.fc9648b03156ad414707.jpeg",
+    "static/media/South.jpeg": "/static/media/South.c6b70a132c30bed55bba.jpeg",
+    "static/media/gothic3.webp": "/static/media/gothic3.fc4786df494a5251603f.webp",
+    "static/media/TownCB.jpeg": "/static/media/TownCB.d558fc87b3ad846cfae5.jpeg",
+    "static/media/shavano.webp": "/static/media/shavano.3879bbf79cfb8fee380c.webp",
+    "static/media/BodhiPMTrans.png": "/static/media/BodhiPMTrans.04df2a1db3d3c94ba4da.png",
+    "index.html": "/index.html",
+    "main.0a350c24.css.map": "/static/css/main.0a350c24.css.map",
+    "main.355d7c50.js.map": "/static/js/main.355d7c50.js.map"
   },
   "entrypoints": [
     "static/css/main.0a350c24.css",
-    "static/js/main.906efc39.js"
+    "static/js/main.355d7c50.js"
   ]
 }
