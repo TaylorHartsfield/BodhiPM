@@ -26,7 +26,7 @@ export default function South({popup}) {
       <Modal fullscreen={true} show={show} onHide={handleClose}>
         <Modal.Header closeButton>
             <Modal.Title>
-                Crested Butte South
+              <h3>Crested Butte South</h3>
             </Modal.Title>
         </Modal.Header>
         <Modal.Body className={styles.modal}>

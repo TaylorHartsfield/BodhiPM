@@ -30,7 +30,7 @@ export default function Mount({popup}) {
       <Modal fullscreen={true} show={show} onHide={handleClose}>
         <Modal.Header closeButton>
             <Modal.Title>
-                Mount Crested Butte
+                <h3>Mount Crested Butte</h3>
             </Modal.Title>
         </Modal.Header>
         <Modal.Body className={styles.modal}>
