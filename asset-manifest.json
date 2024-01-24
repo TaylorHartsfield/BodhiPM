@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BodhiPM/static/css/main.41fb4855.css",
-    "main.js": "/BodhiPM/static/js/main.265316c5.js",
+    "main.css": "/BodhiPM/static/css/main.73c19f1e.css",
+    "main.js": "/BodhiPM/static/js/main.793496bc.js",
     "static/media/CB.jpg": "/BodhiPM/static/media/CB.4a982626cf09c24b33f9.jpg",
     "static/media/TCB.jpg": "/BodhiPM/static/media/TCB.b59fc2cb9cc59bd44bc5.jpg",
     "static/media/maroon.jpeg": "/BodhiPM/static/media/maroon.a0fb54e27fd0d00c76be.jpeg",
@@ -12,11 +12,11 @@
     "static/media/shavano.webp": "/BodhiPM/static/media/shavano.3879bbf79cfb8fee380c.webp",
     "static/media/BodhiPMTrans.png": "/BodhiPM/static/media/BodhiPMTrans.04df2a1db3d3c94ba4da.png",
     "index.html": "/BodhiPM/index.html",
-    "main.41fb4855.css.map": "/BodhiPM/static/css/main.41fb4855.css.map",
-    "main.265316c5.js.map": "/BodhiPM/static/js/main.265316c5.js.map"
+    "main.73c19f1e.css.map": "/BodhiPM/static/css/main.73c19f1e.css.map",
+    "main.793496bc.js.map": "/BodhiPM/static/js/main.793496bc.js.map"
   },
   "entrypoints": [
-    "static/css/main.41fb4855.css",
-    "static/js/main.265316c5.js"
+    "static/css/main.73c19f1e.css",
+    "static/js/main.793496bc.js"
   ]
 }
