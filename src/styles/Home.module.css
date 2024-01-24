@@ -46,9 +46,8 @@
     margin: 0;
     padding: 0;
     animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+    z-index: 2;
 }
 
 .h3 {
@@ -58,10 +57,10 @@
     margin: 0;
     padding: 0;
     animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+    z-index: 2; 
 }
+
 .p {
     font-size: 2rem;
 }
@@ -76,14 +75,10 @@
     display: inline-block;
     margin: 1rem;
     width: 12em;
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
     border-style: solid;
     border-color: transparent;
     text-align: center;
    
-    
 }
 
 .button:hover{
@@ -96,6 +91,9 @@ div.buttonContainer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: fadeInAnimation ease 3s;
+    animation-fill-mode: forwards;
+    z-index: 2;
 }
 
 @media screen and (max-width: 768px) {
