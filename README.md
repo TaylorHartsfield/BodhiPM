@@ -1,3 +1,3 @@
 # Bodhi Property Management Buisness Site
 #### Built with React 
-www.bodhipm.com
+https://taylorhartsfield.github.io/BodhiPM/
